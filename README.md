@@ -42,6 +42,7 @@ Functional Simulation:
       
 	After this you can see the window like below 
 
+![436850565-194b5521-735d-440b-adb0-bdc5acb5eba8](https://github.com/user-attachments/assets/420362bb-0faf-428b-9105-ba42235f4940)
 
 ## Fig 2: Invoke the Cadence Environment
 
@@ -75,11 +76,15 @@ Functional Simulation:
 
 It will invoke the nclaunch window for functional simulation we can compile,elaborate and simulate it using Multiple step
 
+![436851042-953894c8-5af8-4ee8-b7b4-a781dffa219e](https://github.com/user-attachments/assets/f99bd530-67f2-42fd-bded-9cfaebe4ccec)
+
 ## Fig 3: Setting Multi-step simulation
 
 Select Multiple Step and then select “Create cds.lib File” as shown in below figure
 
 Click the cds.lib file and save the file by clicking on Save option
+
+![436490253-616bf3d7-d782-4acc-bd3b-80b690ea2039](https://github.com/user-attachments/assets/638ee770-22f5-4ab1-9ca5-f48f98d76487)
 
 ## Fig 4: cds.lib file Creation
 
@@ -88,6 +93,7 @@ Click the cds.lib file and save the file by clicking on Save option
 	Select “Don’t include any libraries (verilog design)” from “New cds.lib file” and click on “OK” as in below figure
 
 	We are simulating verilog design without using any libraries
+
 
 ## Fig 5: Selection of Don’t include any libraries
 
@@ -98,6 +104,8 @@ Click the cds.lib file and save the file by clicking on Save option
 	Left side you can see the HDL files. Right side of the window has worklib and snapshots directories listed.
 
 	Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation
+
+![436490503-eb893f97-283f-4aa9-8d8d-8f1a867ac89f](https://github.com/user-attachments/assets/f90b2d98-9ba3-4e0f-a5a1-3f4513631758)
 
 ## Fig 6: Nclaunch Window
 
@@ -122,6 +130,8 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 Left side select the file and in Tools : launch verilog compiler with current selection will get enable. Click it to compile the code 
 
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation 
+
+![436490503-eb893f97-283f-4aa9-8d8d-8f1a867ac89f](https://github.com/user-attachments/assets/7e3e9c5b-db2b-404a-a039-246a1fb3ea21)
 
 ## Fig 7: Compiled database in worklib
 
@@ -152,6 +162,8 @@ It contains statements that map logical library names to their physical director
     
 	After elaboration the file will come under snapshot. Select the test bench and simulate it. 
 
+![436490503-eb893f97-283f-4aa9-8d8d-8f1a867ac89f](https://github.com/user-attachments/assets/8a454c40-fd9b-40ab-9845-6a1d081bec62)
+
 ## Fig 8: Elaboration Launch Option
 
 ### Step 3: Simulation: – Simulate with the given test vectors over a period of time to observe the output behaviour. 
@@ -164,9 +176,15 @@ It contains statements that map logical library names to their physical director
 
 	Steps for simulation – Run the simulation command with simulator options
 
+![436490806-72bc3faf-c83a-42a1-9851-2903e70fec4b](https://github.com/user-attachments/assets/c611c5a0-017d-411c-b0d6-76146b46b7a4)
+
 ## Fig 9: Design Browser window for simulation
 
+![436481442-9d3411a5-1010-4beb-986b-b98c1dcee362](https://github.com/user-attachments/assets/59dd8b7e-06cb-4e87-8830-54c05f99b396)
+
 ## Fig 10: Simulation Waveform Window
+
+![436481572-e248f87b-35d3-4f6d-97e2-c7ddac915f76](https://github.com/user-attachments/assets/26f4454f-7696-42ff-b1a5-034bed59d918)
 
 ## Fig 11: Simulation Waveform Window
 
