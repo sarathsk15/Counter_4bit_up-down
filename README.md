@@ -13,6 +13,50 @@ To write a verilog code for 4bit up/down counter and verify the functionality us
 	An up/down counter is a digital counter which can be set to count either from 0 to
 MAX_VALUE or MAX_VALUE to 0.
 
+PROGRAM;
+
+`timescale 1ns / 1ns
+
+module counter_test;
+
+reg clk,rst,m;
+
+wire [3:0] count;
+
+initial
+
+begin
+
+clk=0;
+
+rst=0;#5;
+
+rst=1;
+
+end
+
+initial
+
+begin
+
+m=1;
+
+#160 m=0;
+
+end
+
+counter counter1 (clk,m,rst, count);
+
+always #5 clk=~clk;
+ 
+initial $monitor("Time=%t rst=%b clk=%b count=%b" , $time,rst,clk,count);
+
+initial
+
+#320 $finish;
+
+endmodule
+
 	The direction of the count(mode) is selected using a single bit input. The module has 3 inputs - clk, reset which is active high and a Up Or Down mode input. 
 The output is Counter which is 4 bit in size.
 
